@@ -1,0 +1,324 @@
+.card {
+    width: 100%;
+    height: 340px;
+    margin-top: 2rem;
+    
+    .card-bank {
+        display: flex;
+        justify-content: space-between;
+        
+        .card-selekt {
+            position: relative;
+        }
+        
+        .card-item {
+            position: absolute;
+            cursor: pointer;
+            z-index: 3;
+            width: 40rem;
+            height: 20rem;
+            border-radius: 10px;
+            padding: 3rem;
+            z-index: 3;
+            
+            background: linear-gradient(60deg, rgba(34,34,34,1) 42%, rgba(47,47,47,1) 42%);
+            
+            .card-item-header {
+                display: flex;
+                justify-content: space-between;
+                text-transform: uppercase;
+                
+                p {
+                    color: $color-text;
+                    font-size: 2.2rem;
+                    font-weight: 500;
+                }
+            }
+            
+            .card-cheap {
+                margin-top: 2rem;
+                width: 46px;
+                border-radius: 5px;
+                background: linear-gradient(180deg, #FFCA3F -26.96%, #CA7C22 -1.73%, #FDDB7A 20.98%, #FFAD45 79.02%, #A95F0D 111.82%, #FFAD45 139.57%, #FFFF9B 172.38%, #FFED7C 192.56%, #FFCA3F 225.36%);
+            }
+            
+            .card-nomder {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 2rem;
+                p {
+                    color: $color-text;
+                    font-size: 4rem;
+                }
+            }
+            
+            .card-password {
+                color: $color-text;
+                font-size: 1.4rem;
+                margin-top: 1rem;
+            }
+            
+            .card-date {
+                display: flex;
+                float: right;
+                text-transform: uppercase;
+                color: $color-text;
+                
+                .date {
+                    margin: auto 0;
+                    margin-left: 1rem;
+                    font-size: 3rem;
+                    line-height: .1;
+                    position: relative;
+                    
+                    &:after {
+                        position: absolute;
+                        top: 0;
+                        left: -8px;
+                        
+                        content: '';
+                        border: 4px solid transparent;	
+                        border-left: 5px solid $color-text;
+                    }
+                }
+                
+            }
+            
+                            
+            .card-name-user {
+                color: $color-text;
+                font-size: 3rem;
+                margin-top: 2rem;
+            }
+            
+            &.card-item--spent {
+                right: 35%;
+                background: linear-gradient(30deg, rgba(34,34,34,1) 47%, rgba(25,109,112,1) 100%);
+                .card-item-header {
+                    
+                    .card-menu {
+                        font-size: 0;
+                        color: transparent;
+                        width: 7px;
+                        height: 7px;
+                        border-radius: 50%;
+                        background-color: $white;
+                        cursor: pointer;
+                        position: relative;
+                        
+                        &:after,
+                        &:before {
+                            position: absolute;
+                            left: 0;
+                            content: '';
+                            width: 7px;
+                            height: 7px;
+                            border-radius: 50%;
+                            background-color: $white;
+                            
+                            cursor: pointer;
+                        }
+                        
+                        &:after {
+                            top: 10px;
+                        }
+                        
+                        &:before {
+                            bottom: 10px;
+                        }
+                    }
+                    
+                    p {
+                        color: $white;
+                        text-transform: none;
+                        font-size: 4.8rem;
+                        font-weight: 300;
+                    }
+                    
+                }
+                
+                .date-selekt {
+                    
+                    margin-top: 1rem;
+                    
+                    .date-form {
+                    
+                        position: relative;
+                        select {
+                            background-color: transparent;
+                            color: #9E9E9E;
+                            border: none;
+                            cursor: pointer;
+
+                            padding-right: 25px;
+                            -webkit-appearance: none;
+                            -moz-appearance: none;
+                            appearance: none;
+                        }
+                        
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: 10rem;
+                            width: 9px;
+                            height: 9px;
+                            
+                            transform: rotate(45deg);
+
+                            border-bottom: 2px solid $white;
+                            border-right: 2px solid $white;
+                        }
+                
+                    }
+                    
+                }
+                
+                .card-balans {
+                    color: $white;
+                    display: flex;
+                    font-size: 5rem;
+                    margin-top: 5rem;
+                    
+                    .many {
+                        margin-left: 1rem;
+                    }
+                    
+                }
+                
+                .card-total-balans {
+                    margin-top: 2rem;
+                    font-size: 1.5rem;
+                    color: #9E9E9E;
+                }
+                
+                transition: all .2s linear;
+                
+                &:hover {
+                    transform: scale(1.05); 
+                }
+                
+            }
+            
+            &.card-item--balance {
+                right: 3rem;
+                 background: linear-gradient(30deg, rgba(34,34,34,1) 47%, rgba(116,26,26,1) 100%);
+               
+                .card-item-header {
+                
+                    p {
+                        color: $white;
+                        text-transform: none;
+                        font-size: 4.8rem;
+                        font-weight: 300;
+                    }
+                    
+                    .card-menu {
+                        font-size: 0;
+                        color: transparent;
+                        width: 7px;
+                        height: 7px;
+                        border-radius: 50%;
+                        background-color: $white;
+                        cursor: pointer;
+                        position: relative;
+                        
+                        &:after,
+                        &:before {
+                            position: absolute;
+                            left: 0;
+                            content: '';
+                            width: 7px;
+                            height: 7px;
+                            border-radius: 50%;
+                            background-color: $white;
+                            
+                            cursor: pointer;
+                        }
+                        
+                        &:after {
+                            top: 10px;
+                        }
+                        
+                        &:before {
+                            bottom: 10px;
+                        }
+                    }
+                    
+                }
+                
+                .card-balans {
+                    color: $white;
+                    display: flex;
+                    font-size: 5rem;
+                    margin-top: 8rem;
+                    
+                    .many {
+                        margin-left: 1rem;
+                    }
+                    
+                }
+                
+                .card-total-balans {
+                    margin-top: 2rem;
+                    font-size: 1.5rem;
+                    color: #9E9E9E;
+                }
+                
+                transition: all .2s linear;
+                
+                &:hover {
+                    transform: scale(1.05); 
+                }
+                
+            }
+            
+            
+            &.card-item-1 {
+                position: absolute;
+                top: 0rem;
+                left: 0;
+                opacity: 1s;
+                z-index: 3;
+                transform: scale(1);
+                transition: all .2s linear;
+                
+                &:hover {
+                    transform: scale(1.05); 
+                }
+            }
+            
+            &.card-item-2 {
+                position: absolute;
+                top: 3rem;
+                left: 0;
+                opacity: 1s;
+                z-index: 1;
+                transform: scale(0.9);
+                transition: all .2s linear;
+                
+                &:hover {
+                    top: 2rem;
+                    transform: scale(0.95); 
+                }
+            }
+                        
+            &.card-item-3 {
+                position: absolute;
+                top: 6rem;
+                left: 0;
+                opacity: .5;
+                z-index: 0;
+                transform: scale(0.8);
+                transition: all .2s linear;
+                
+                &:hover {
+                    top: 5rem;
+                    transform: scale(0.85); 
+                }
+            }
+            
+        }
+        
+    }
+}

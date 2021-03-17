@@ -1,0 +1,18 @@
+.container {
+    width: 89%;
+    height: 80%;
+    position: absolute;
+    top: 10rem;
+    left: 10rem;
+    background-color: $bc-model-item;
+    border-radius: 20px;
+    
+    padding: 0 3rem;
+    
+    .title__container {
+        color: #545454;
+        font-size: 2.4rem;
+        font-weight: 600;
+        margin-bottom: 2rem;
+    }
+}

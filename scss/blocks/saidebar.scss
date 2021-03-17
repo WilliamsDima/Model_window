@@ -1,0 +1,13 @@
+.saidebar {
+    height: 100%;
+    background-color: transparent;
+    width: 10rem;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    
+    display: flex;
+    justify-content: center;
+}

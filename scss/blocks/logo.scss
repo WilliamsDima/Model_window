@@ -1,0 +1,15 @@
+.logo {
+    display: flex;
+    
+    .logo__text {
+        
+        font-size: $fc-title;
+        font-weight: 500;
+        background: linear-gradient(#74D1E3, #245BA8); 
+        -webkit-background-clip: text; /* Обрезаем фон по тексту */
+        -webkit-text-fill-color: transparent; /* Прозрачный текст */
+        
+        margin: auto 0;
+        margin-left: 2px;
+    }
+}
